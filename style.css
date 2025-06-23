@@ -1,17 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 76px;
+}
+
 .header-link {
     font-size: 16px;
     line-height: 20px;
 }
 
-.header {
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.header-big {
     font-weight: 600;
     font-size: 64px;
     line-height: 70px;
+    margin-top: 64px;
+    margin-bottom: 16px;
 }
 
 .header-desc {
     font-size: 24px;
     line-height: 32px;
+    margin-bottom: 16px;
 }
 
 .go-to-catalog {
@@ -24,6 +40,7 @@
     font-size: 48px;
     line-height: 59px;
     color: #000000;
+    margin-bottom: 32px;
 }
 
 .product {
@@ -31,12 +48,14 @@
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+    margin-bottom: 8px;
 }
 
 .product-desc {
     font-size: 14px;
     line-height: 17px;
     color: #888888;
+    margin-bottom: 12px;
 }
 
 .price {
@@ -59,6 +78,7 @@
     font-size: 24px;
     line-height: 29px;
     color: #000000;
+    margin-bottom: 12px;
 }
 
 .footer-link {
@@ -73,6 +93,7 @@
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+    margin-bottom: 16px;
 }
 
 .input-email {
