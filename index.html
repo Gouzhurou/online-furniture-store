@@ -5,36 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header class="header">
-        <a href="./index.html">
-            <img src="./img/logo.svg" alt="Логотип сайта">
-        </a>
-        <form action="#">
-            <input type="text">
-        </form>
-        <nav class="menu">
-            <a class="menu__link" href="./catalog.html">Каталог</a>
-            <a class="menu__link" href="#">Корзина</a>
-        </nav>
-    </header>
+    <div class="top">
+        <header class="header">
+            <a href="./index.html">
+                <img src="./img/logo.svg" alt="Логотип сайта">
+            </a>
+            <form action="#">
+                <input placeholder="Поиск" class="header__input" type="text">
+            </form>
+            <nav class="menu">
+                <a class="menu__link" href="./catalog.html">Каталог</a>
+                <a class="menu__link" href="#">Корзина</a>
+            </nav>
+        </header>
 
-    <section class="top">
-        <h1 class="title">Всё, чего заслуживает ваш дом</h1>
-        <p class="top__text">Наша мебель — ваше отражение</p>
-        <a class="top__link" href="./catalog.html">Перейти в каталог</a>
-    </section>
+        <section class="top__content">
+            <h1 class="title">Всё, чего заслуживает ваш дом</h1>
+            <p class="top__text">Наша мебель — ваше отражение</p>
+            <a class="top__link" href="./catalog.html">Перейти в каталог</a>
+        </section>
+    </div>
 
     <section>
         <h2 class="heading">Специальные предложения</h2>
-        <img src="./img/product1.jpg" alt="Кресло VILORA">
+
+        <img src="img/VODA_chandelier.jpeg" alt="Люстра VODA">
+        <h3 class="product__heading">Люстра VODA</h3>
+        <p class="product__text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+        <p class="product__price">45 000 руб.</p>
+        <p class="product__price product__price_sale">67 000 руб</p>
+
+        <img src="img/RONALD_sofa.jpeg" alt="Диван RONALD">
+        <h3 class="product__heading">Диван RONALD</h3>
+        <p class="product__text">Модель отличается простотой линий и форм, отсутствием броского декора.</p>
+        <p class="product__price">156 000 руб.</p>
+        <p class="product__price product__price_sale">198 000 руб.</p>
+
+        <img src="img/VENT_dresser.jpeg" alt="Комод VENT">
+        <h3 class="product__heading">Комод VENT</h3>
+        <p class="product__text">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+        <p class="product__price">34 000 руб.</p>
+        <p class="product__price product__price_sale">45 000 руб.</p>
+    </section>
+
+    <section>
+        <h2 class="heading">Каталог товаров</h2>
+
+        <img src="img/TATRAN_bed.jpeg" alt="Кровать TATRAN">
+        <h3 class="product__heading">Кровать TATRAN</h3>
+        <p class="product__text">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+        <p class="product__price">120 000 руб.</p>
+
+        <img src="img/VILORA_chair.jpg" alt="Кресло VILORA">
         <h3 class="product__heading">Кресло VILORA</h3>
         <p class="product__text">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
-        <p class="product__price">21 000</p>
-        <p class="product__price product__price_sale">28 000</p>
+        <p class="product__price">21 000 руб.</p>
+
+        <img src="img/MENU_table.jpeg" alt="Стол MENU">
+        <h3 class="product__heading">Стол MENU</h3>
+        <p class="product__text">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.</p>
+        <p class="product__price">34 000 руб.</p>
+
+        <img src="img/ASKESTA_chair.jpeg" alt="Кресло ASKESTA">
+        <h3 class="product__heading">Кресло ASKESTA</h3>
+        <p class="product__text">Высокоэластичный пенополиуретан в «начинке» кресла надежен и долговечен</p>
+        <p class="product__price">68 000 руб.</p>
+
+        <img src="img/NORMAN_table.jpeg" alt="Стол NORMAN">
+        <h3 class="product__heading">Стол NORMAN</h3>
+        <p class="product__text">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки</p>
+        <p class="product__price">40 000 руб.</p>
+
+        <img src="img/NASTAN_sofa.jpeg" alt="Диван NASTAN">
+        <h3 class="product__heading">Диван NASTAN</h3>
+        <p class="product__text">Модель отличается простотой линий и форм, отсутствием броского декора. </p>
+        <p class="product__price">80 000 руб.</p>
     </section>
 
     <footer>
@@ -56,7 +108,7 @@
 
         <form class="form" action="#">
             <p class="form__text">Получайте наши новости и обновления</p>
-            <input class="form__email" type="email">
+            <input placeholder="Ваш e-mail" class="form__email" type="email">
             <button class="form__button">Подписаться</button>
         </form>
     </footer>
