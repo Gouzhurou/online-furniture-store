@@ -95,14 +95,17 @@ a {
     margin-bottom: 16px;
 }
 
-.top__link {
+.link-go {
     font-size: 16px;
     line-height: 24px;
-    color: rgb(255, 255, 255);
     font-weight: 400;
     letter-spacing: 0;
     text-align: left;
     text-decoration-line: underline;
+}
+
+.top__link {
+    color: rgb(255, 255, 255);
 }
 
 .heading {
@@ -165,6 +168,14 @@ a {
 .product__price_sale {
     text-decoration-line: line-through;
     color: #888888;
+}
+
+.link-box {
+    margin-top: 32px;
+}
+
+.link-box__link {
+    color: rgb(0, 0, 0);
 }
 
 .footer {
